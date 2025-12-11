@@ -1,5 +1,3 @@
-# Project-Pemrograman-Dasar-Semester-1
-
 Source Code project pemrograman dasar semester 1 berjudul aplikasi Consult untuk mahasiswa
 Ber anggotakan:
 1. Ilmiya Lubna
