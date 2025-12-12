@@ -20,7 +20,7 @@ void App::run() {
 }
 
 void App::showMainMenu() {
-    cout << "\n=== Menu Utama ===\n";
+    cout << "\n=== Consult ===\n";
     cout << "1. Registrasi\n";
     cout << "2. Login\n";
     cout << "0. Keluar\n";
@@ -89,14 +89,14 @@ void App::chatMenu() {
     string msg;
     cout << "Ketik pesan untuk konselor: "; getline(cin, msg);
     chats.push_back({users.getUsername(), msg, ""});
-    cout << "Pesan terkirim (konselor akan membalas nanti).\n";
+    cout << "Pesan terkirim (konselor akan segera membalas).\n";
 }
 
 void App::riwayatChatMahasiswa() {
     cout << "\n=== Riwayat Konsultasi ===\n";
     for(auto &c : chats) {
         if(c.mahasiswaUsername == users.getUsername()) {
-            cout << "- Kamu: " << c.message << "\n";
+            cout << "Anda: " << c.message << "\n";
             if(c.reply != "")
                 cout << "  Konselor: " << c.reply << "\n";
         }
